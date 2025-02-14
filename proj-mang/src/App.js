@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdminLogin from './components/AdminLogin';
 
 function App() {
   return (
       <Router>
-        <Switch>
+        <Routes>
           <Route path="/admin/login" component={AdminLogin} />
-        </Switch>
+        </Routes>
       </Router>
   );
 }

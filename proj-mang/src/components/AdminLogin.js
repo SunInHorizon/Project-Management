@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { collection, query, where, getDocs } from 'firebase/firestore';
-import { db } from '../firebaseConfig';
+import { db } from '../firebase';
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ username: "", password: "" });
